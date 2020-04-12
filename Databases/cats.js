@@ -1,5 +1,5 @@
 var mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost/cat_app");
+mongoose.connect("mongodb://root:example@localhost:27017/cat_app?authSource=admin", {useNewUrlParser: true});
 
 var catSchema = new mongoose.Schema({
    name: String,
